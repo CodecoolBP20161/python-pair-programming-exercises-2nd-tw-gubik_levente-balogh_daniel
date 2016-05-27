@@ -7,7 +7,8 @@ def passwordgen():
     LOWER = string.ascii_lowercase
     UPPER = string.ascii_uppercase
     DIGITS = string.digits
-    PUNCT = string.punctuation
+    PUNCT = ['!', '@', '#', '$', '%', '^', '&', '*', '(', ')', '?']
+    # first we used string.punctuation, but that contains more characters, then the test.py
     n = 0
     chars = [1, 1, 1, 1]
     while n < 8 or (chars[0] or chars[1] or chars[2] or chars[3]):
